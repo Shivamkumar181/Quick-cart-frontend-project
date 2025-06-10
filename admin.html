@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel - Manage Products</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Admin Panel</h1>
+    <p>Welcome, Admin! Manage your products and payments below.</p>
+  </header>
+
+  <section class="product-management">
+    <h2>Manage Products</h2>
+    <form id="product-form">
+      <label for="product-name">Product Name:</label>
+      <input type="text" id="product-name" required>
+      
+      <label for="product-price">Price:</label>
+      <input type="number" id="product-price" required>
+      
+      <label for="product-status">Status:</label>
+      <select id="product-status">
+        <option value="In Stock">In Stock</option>
+        <option value="Out of Stock">Out of Stock</option>
+      </select>
+      
+      <button type="submit">Add Product</button>
+    </form>
+    <div id="product-success" class="success-message"></div>
+  </section>
+
+  <section class="product-list">
+    <h2>Product List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="product-table-body">
+        <!-- Dynamic Product Rows -->
+      </tbody>
+    </table>
+  </section>
+
+  <section class="payment-status">
+    <h2>Payment Status</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order ID</th>
+          <th>Customer Name</th>
+          <th>Amount</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="payment-table-body">
+        <!-- Dynamic Payment Rows -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="admin-panel.js"></script>
+</body>
+</html>

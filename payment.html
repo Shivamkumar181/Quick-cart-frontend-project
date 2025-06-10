@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery Shopping</title>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Grocery Shopping</h1>
+    
+    <!-- Add Item Section -->
+    <div class="add-item">
+      <input type="text" id="item-name" placeholder="Item Name" />
+      <input type="number" id="item-price" placeholder="Item Price" />
+      <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <!-- Grocery List -->
+    <h2>Your Cart</h2>
+    <ul id="grocery-list">
+      <!-- List of grocery items will be dynamically added here -->
+    </ul>
+
+    <!-- Total Price Section -->
+    <div class="total">
+      <p><strong>Total Price: $<span id="total-price">0</span></strong></p>
+      <button onclick="proceedToPayment()">Proceed to Payment</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

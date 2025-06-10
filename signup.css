@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f9f0;
+    overflow: hidden;
+  }
+  
+  .signup-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Animated Background */
+  .animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .animated-bg div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    animation: float 6s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-30px) rotate(15deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+  }
+  
+  .spin {
+    position: absolute;
+    animation: spin 12s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .leaf {
+    background: url('https://cdn-icons-png.flaticon.com/512/1617/1617562.png') no-repeat center/contain;
+    top: 20%;
+    left: 10%;
+  }
+  
+  .carrot {
+    background: url('https://cdn-icons-png.flaticon.com/512/415/415733.png') no-repeat center/contain;
+    top: 30%;
+    right: 20%;
+  }
+  
+  .broccoli {
+    background: url('https://cdn-icons-png.flaticon.com/512/135/135695.png') no-repeat center/contain;
+    bottom: 20%;
+    left: 15%;
+  }
+  
+  .tomato {
+    background: url('https://cdn-icons-png.flaticon.com/512/135/135622.png') no-repeat center/contain;
+    bottom: 5%;
+    right: 25%;
+  }
+  
+  /* Sign-Up Form */
+  .signup-form {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    z-index: 1;
+  }
+  
+  .signup-form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #4caf50;
+  }
+  
+  .signup-form p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .signup-form input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+  }
+  
+  .signup-form button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .signup-form button:hover {
+    background: #388e3c;
+  }
+  
+  .signup-form .login-prompt {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .signup-link {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .signup-link:hover {
+    text-decoration: underline;
+  }
+  
